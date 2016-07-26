@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Configs;
@@ -12,8 +13,19 @@ namespace LfuCache.PerformanceTest
         [Params(100000)]
         public int ElementsCount { get; set; }
 
+        [Params(200000)]
+        public int OperationsCount { get; set; }
+
         [Params(90000)]
         public int CacheSize { get; set; }
+
+        private BitArray _operations;
+
+        private class OperationType
+        {
+            public const bool Read = false;
+            public const bool Write = true;
+        }
 
         class ListElement
         {
@@ -30,6 +42,7 @@ namespace LfuCache.PerformanceTest
         {
             _lfuCache = new LfuCache<string, string>(CacheSize);
             _cacheElements = new List<ListElement>();
+            _operations = new BitArray(OperationsCount);
 
             var random = new Random();
 
@@ -41,19 +54,32 @@ namespace LfuCache.PerformanceTest
                 listElement.Value = element;
                 _cacheElements.Add(listElement);
             }
+
+            for (int i = 0; i < OperationsCount; i++)
+            {
+                _operations[i] = Convert.ToBoolean(random.Next(Convert.ToInt32(OperationType.Read), Convert.ToInt32(OperationType.Write)));
+            }
         }
 
         [Benchmark]
         public void BenchmarkLfuCachePerformance()
         {
-            foreach (ListElement le in _cacheElements)
+            int index = 0;
+            for (int i = 0; i < OperationsCount; i++)
             {
-                _lfuCache.Add(le.Key, le.Value);
-            }
+                if (index >= _cacheElements.Count)
+                    index = index % _cacheElements.Count;
 
-            foreach (ListElement le in _cacheElements)
-            {
-                _lfuCache.Get(le.Key);
+                if (_operations[i] == OperationType.Read)
+                {
+                    _lfuCache.Get(_cacheElements[index].Key);
+                }
+                else if (_operations[i] == OperationType.Write)
+                {
+                    _lfuCache.Add(_cacheElements[index].Key, _cacheElements[index].Value);
+                }
+
+                index++;
             }
         }
 
