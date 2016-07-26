@@ -1,0 +1,7 @@
+C:\Users\corneladavidoaiei\Documents\Visual Studio 2013\Projects\Least-Frequently-Cache\LfuCache.UnitTest\bin\Release\LfuCache.UnitTest.dll
+C:\Users\corneladavidoaiei\Documents\Visual Studio 2013\Projects\Least-Frequently-Cache\LfuCache.UnitTest\bin\Release\LfuCache.UnitTest.pdb
+C:\Users\corneladavidoaiei\Documents\Visual Studio 2013\Projects\Least-Frequently-Cache\LfuCache.UnitTest\bin\Release\LFUCache.dll
+C:\Users\corneladavidoaiei\Documents\Visual Studio 2013\Projects\Least-Frequently-Cache\LfuCache.UnitTest\bin\Release\LFUCache.pdb
+C:\Users\corneladavidoaiei\Documents\Visual Studio 2013\Projects\Least-Frequently-Cache\LfuCache.UnitTest\obj\Release\LfuCache.UnitTest.csprojResolveAssemblyReference.cache
+C:\Users\corneladavidoaiei\Documents\Visual Studio 2013\Projects\Least-Frequently-Cache\LfuCache.UnitTest\obj\Release\LfuCache.UnitTest.dll
+C:\Users\corneladavidoaiei\Documents\Visual Studio 2013\Projects\Least-Frequently-Cache\LfuCache.UnitTest\obj\Release\LfuCache.UnitTest.pdb

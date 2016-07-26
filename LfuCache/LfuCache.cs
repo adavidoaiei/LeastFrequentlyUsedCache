@@ -94,15 +94,15 @@ namespace LfuCache
 
         public bool TryGet(TKey key, out TValue val)
         {
-            LinkedListNode<CacheNode> data;
+            LinkedListNode<CacheNode> linkedListNode;
             bool success = false;
 
-            if (_cache.TryGetValue(key, out data))
+            if (_cache.TryGetValue(key, out linkedListNode))
             {
-                var cacheNode = data.Value;
+                var cacheNode = linkedListNode.Value;
                 val = cacheNode.Data;
 
-                RemoveCacheNodeFromLfuBinaryTree(cacheNode, data);
+                RemoveCacheNodeFromLfuBinaryTree(linkedListNode);
 
                 var newIndex = ++cacheNode.UseCount;
 
@@ -120,8 +120,9 @@ namespace LfuCache
             return success;
         }
 
-        private void RemoveCacheNodeFromLfuBinaryTree(CacheNode cacheNode, LinkedListNode<CacheNode> linkedListNode)
+        private void RemoveCacheNodeFromLfuBinaryTree(LinkedListNode<CacheNode> linkedListNode)
         {
+            var cacheNode = linkedListNode.Value;
             var oldIndex = cacheNode.UseCount;
 
             _lfuBinaryTree[oldIndex].Remove(linkedListNode);
