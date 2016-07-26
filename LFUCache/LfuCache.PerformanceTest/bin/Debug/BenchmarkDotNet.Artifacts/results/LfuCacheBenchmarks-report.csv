@@ -1,2 +1,0 @@
-Type;Method;Mode;Platform;Jit;Framework;Toolchain;Runtime;LaunchCount;WarmupCount;TargetCount;Affinity;NrElements;CacheSize;Median;StdDev;Gen 0;Gen 1;Gen 2;Bytes Allocated/Op
-LfuCacheBenchmarks;BenchmarkLfuCachePerformance;Throughput;Host;Host;Host;Classic;Host;Auto;Auto;Auto;Auto;100000;90000;96.4841 ms;9.2933 ms;27.00;51.00;2.00;2,968,482.91
