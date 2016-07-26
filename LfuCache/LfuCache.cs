@@ -102,7 +102,7 @@ namespace LfuCache
                 var cacheNode = linkedListNode.Value;
                 val = cacheNode.Data;
 
-                RemoveCacheNodeFromLfuBinaryTree(linkedListNode);
+                RemoveLinkedListNodeFromLfuBinaryTree(linkedListNode);
 
                 var newIndex = ++cacheNode.UseCount;
 
@@ -120,7 +120,7 @@ namespace LfuCache
             return success;
         }
 
-        private void RemoveCacheNodeFromLfuBinaryTree(LinkedListNode<CacheNode> linkedListNode)
+        private void RemoveLinkedListNodeFromLfuBinaryTree(LinkedListNode<CacheNode> linkedListNode)
         {
             var cacheNode = linkedListNode.Value;
             var oldIndex = cacheNode.UseCount;
