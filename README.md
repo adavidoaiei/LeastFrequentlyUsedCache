@@ -3,5 +3,5 @@
 A Least Frequently Cache algorithm implementation which has logarithmic complexity, it's using a binary tree where nodes are linked list of cached elements with the same use count, this binary tree sorts this linked list by use count.
 
 Performance benchmark:
-<img src="blob:https%3A//drive.google.com/4e0a49fb-5a50-49bb-a530-27254a32067b" class="drive-viewer-image-img drive-viewer-focus-to-default" alt="Displaying _Untitled.png" aria-hidden="true">
+<img src="https://lh3.googleusercontent.com/cMz1kmWD98r2ST79fsQdSe1wp7h9dTt2oBnNnbygfw0CMSTTR1uVT1f28PyihOtrqVEVmsH3zoi0S1TT7qFsYoAGgr-nF_tKkm3gZL1P2VicZ-iwF7sSx05ldXy4FD3p5re1YPFBD3B5LY9ot6b6sygiyPPwqB9tiNS0mDoLvuc1ZeQD4YmV7ytx9L3z9QIuds2IiOKbLjHFW_Gws_3iEmx6VU8CqiiLHmMwjRgwhhlyFuHJwm5BP_XX5WZxd-npRof5bxQbxKgyu_9odVxCJHWiD1rEZCKyFEl-06sTLdYzyolU_34uTv94p24seMy2PSSXnl03FC77tBDTeP2y7Eo377t0u0tICiMg7A4c-IQkJSOF0BYME3Sn7RuCZsMIrEb-k0mL0UTTa9rmG8WDUZWGthOLmAyKd36HAkvAPs9emUzZMGiau-I0FSUGzY-ivYio_DVCo2WyfNRdNL6BFDdGkdh02aqMRi6TnR1GtvSdttcyn2QeE-RXWNy8vbGna2ZNFGxwcVVqramIaLwu-5b0opdT_m9VlzdCadIdbuEQVg9VJPp-xGqHKnCgW6D6BkRIUPVoGtLQLEUitSJwFwvSY4sNOZA=w836-h220-no" />
 
