@@ -10,6 +10,6 @@ JitModules=clrjit-v4.6.1080.0
 Type=LfuCacheBenchmarks  Mode=Throughput  
 
 ```
-                       Method | NrElements | CacheSize |     Median |    StdDev | Gen 0 | Gen 1 | Gen 2 | Bytes Allocated/Op |
------------------------------ |----------- |---------- |----------- |---------- |------ |------ |------ |------------------- |
- BenchmarkLfuCachePerformance |     100000 |     90000 | 96.4841 ms | 9.2933 ms | 27.00 | 51.00 |  2.00 |       2,968,482.91 |
+                       Method | ElementsCount | OperationsCount | CacheSize |    Median |    StdDev | Gen 0 | Gen 1 | Gen 2 | Bytes Allocated/Op |
+----------------------------- |-------------- |---------------- |---------- |---------- |---------- |------ |------ |------ |------------------- |
+ BenchmarkLfuCachePerformance |        100000 |          200000 |     90000 | 7.6411 ms | 0.0510 ms |  1.00 |  1.00 |     - |         139,535.09 |

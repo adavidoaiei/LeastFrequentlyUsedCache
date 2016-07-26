@@ -11,7 +11,7 @@ namespace LfuCache.PerformanceTest
     public class LfuCacheBenchmarks
     {
         [Params(100000)]
-        public int ElementsCount { get; set; }
+        public int ProcessingElementsCount { get; set; }
 
         [Params(200000)]
         public int OperationsCount { get; set; }
@@ -35,29 +35,29 @@ namespace LfuCache.PerformanceTest
 
         private ICache<string, string> _lfuCache;
 
-        private IList<ListElement> _cacheElements;
+        private IList<ListElement> _processingElements;
 
         [Setup]
         public void BeforeEach()
         {
             _lfuCache = new LfuCache<string, string>(CacheSize);
-            _cacheElements = new List<ListElement>();
+            _processingElements = new List<ListElement>();
             _operations = new BitArray(OperationsCount);
 
             var random = new Random();
 
-            for (int i = 0; i < ElementsCount; i++)
+            for (int i = 0; i < ProcessingElementsCount; i++)
             {
                 ListElement listElement = new ListElement();
-                var element = random.Next(1, ElementsCount).ToString();
+                var element = random.Next(1, ProcessingElementsCount).ToString();
                 listElement.Key = element;
                 listElement.Value = element;
-                _cacheElements.Add(listElement);
+                _processingElements.Add(listElement);
             }
 
             for (int i = 0; i < OperationsCount; i++)
             {
-                _operations[i] = Convert.ToBoolean(random.Next(Convert.ToInt32(OperationType.Read), Convert.ToInt32(OperationType.Write)));
+                _operations[i] = random.Next(100) < 50 ? OperationType.Read : OperationType.Write;
             }
         }
 
@@ -67,16 +67,16 @@ namespace LfuCache.PerformanceTest
             int index = 0;
             for (int i = 0; i < OperationsCount; i++)
             {
-                if (index >= _cacheElements.Count)
-                    index = index % _cacheElements.Count;
+                if (index >= _processingElements.Count)
+                    index = index % _processingElements.Count;
 
                 if (_operations[i] == OperationType.Read)
                 {
-                    _lfuCache.Get(_cacheElements[index].Key);
+                    _lfuCache.Get(_processingElements[index].Key);
                 }
                 else if (_operations[i] == OperationType.Write)
                 {
-                    _lfuCache.Add(_cacheElements[index].Key, _cacheElements[index].Value);
+                    _lfuCache.Add(_processingElements[index].Key, _processingElements[index].Value);
                 }
 
                 index++;
