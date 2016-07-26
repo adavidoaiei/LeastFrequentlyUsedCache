@@ -13,7 +13,7 @@ namespace LfuCache.PerformanceTest
         [Params(100000)]
         public int ProcessingElementsCount { get; set; }
 
-        [Params(200000)]
+        [Params(1000000)]
         public int OperationsCount { get; set; }
 
         [Params(90000)]
