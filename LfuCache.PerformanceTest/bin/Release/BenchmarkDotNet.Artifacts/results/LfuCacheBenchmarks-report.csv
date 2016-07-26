@@ -1,2 +1,2 @@
-Type;Method;Mode;Platform;Jit;Framework;Toolchain;Runtime;LaunchCount;WarmupCount;TargetCount;Affinity;ElementsCount;OperationsCount;CacheSize;Median;StdDev;Gen 0;Gen 1;Gen 2;Bytes Allocated/Op
-LfuCacheBenchmarks;BenchmarkLfuCachePerformance;Throughput;Host;Host;Host;Classic;Host;Auto;Auto;Auto;Auto;100000;200000;90000;77.5737 ms;11.8146 ms;19.00;36.00;2.00;3,254,754.40
+Type;Method;Mode;Platform;Jit;Framework;Toolchain;Runtime;LaunchCount;WarmupCount;TargetCount;Affinity;ProcessingElementsCount;OperationsCount;CacheSize;Median;StdDev;Gen 0;Gen 1;Gen 2;Bytes Allocated/Op
+LfuCacheBenchmarks;BenchmarkLfuCachePerformance;Throughput;Host;Host;Host;Classic;Host;Auto;Auto;Auto;Auto;100000;200000;90000;62.0024 ms;0.7934 ms;163.00;324.00;2.00;3,164,170.66
