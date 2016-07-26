@@ -10,7 +10,7 @@ namespace LfuCache.PerformanceTest
     public class LfuCacheBenchmarks
     {
         [Params(100000)]
-        public int NrElements { get; set; }
+        public int ElementsCount { get; set; }
 
         [Params(90000)]
         public int CacheSize { get; set; }
@@ -33,10 +33,10 @@ namespace LfuCache.PerformanceTest
 
             var random = new Random();
 
-            for (int i = 0; i < NrElements; i++)
+            for (int i = 0; i < ElementsCount; i++)
             {
                 ListElement listElement = new ListElement();
-                var element = random.Next(1, NrElements).ToString();
+                var element = random.Next(1, ElementsCount).ToString();
                 listElement.Key = element;
                 listElement.Value = element;
                 _cacheElements.Add(listElement);

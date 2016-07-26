@@ -14,18 +14,19 @@ namespace LfuCache
 
         private readonly int _size;
 
+#if DEBUG
         public delegate void EvictDelegate(TValue value);
         public event EvictDelegate EvictEvent;
+#endif
 
-        private Dictionary<TKey, LinkedListNode<CacheNode>> _cache = new Dictionary<TKey, LinkedListNode<CacheNode>>();
-        private SortedDictionary<int, LinkedList<CacheNode>> _lfuBinaryTree = new SortedDictionary<int, LinkedList<CacheNode>>();
+        private readonly Dictionary<TKey, LinkedListNode<CacheNode>> _cache = new Dictionary<TKey, LinkedListNode<CacheNode>>();
+        private readonly SortedDictionary<int, LinkedList<CacheNode>> _lfuBinaryTree = new SortedDictionary<int, LinkedList<CacheNode>>();
 
-        private int _counter;
+        private int _entriesCount;
 
         public LfuCache(int size)
         {
             _size = size;
-            _counter = 0;
         }
 
         public void Add(TKey key, TValue val)
@@ -34,31 +35,39 @@ namespace LfuCache
 
             if (!TryGet(key, out existing))
             {
-                var node = new CacheNode() { Key = key, Data = val, UseCount = 0 };
+                var node = new CacheNode() { Key = key, Data = val };
 
-                if (_counter == _size)
+                if (_entriesCount == _size)
                 {
                     var removedData = Evict();
-                    _counter--;
-                    RaiseEvictEvent(removedData);
+                    _entriesCount--;
+#if DEBUG
+                    RaiseEvictEvent(removedData); 
+#endif
                 }
 
                 var insertedNode = InsertCacheNodeInLfuBinaryTree(node);
 
                 _cache[key] = insertedNode;
-                _counter++;
+                _entriesCount++;
             }
         }
 
         private TValue Evict()
         {
-            var minimumLinkedList = _lfuBinaryTree.First().Value;
-            var dataToRemove = minimumLinkedList.First.Value.Data;
-            _cache.Remove(minimumLinkedList.First.Value.Key);
-            minimumLinkedList.RemoveFirst();
+            var minimumUseCountLinkedList = _lfuBinaryTree.First().Value;
+
+            var cacheNode = minimumUseCountLinkedList.First.Value;
+
+            var dataToRemove = cacheNode.Data;
+            _cache.Remove(cacheNode.Key);
+
+            minimumUseCountLinkedList.RemoveFirst();
+
             return dataToRemove;
         }
 
+#if DEBUG
         private void RaiseEvictEvent(TValue data)
         {
             EvictDelegate handler = EvictEvent;
@@ -67,22 +76,11 @@ namespace LfuCache
                 handler(data);
             }
         }
+#endif
 
         private LinkedListNode<CacheNode> InsertCacheNodeInLfuBinaryTree(CacheNode node)
         {
-            LinkedListNode<CacheNode> insertedNode;
-
-            if (_lfuBinaryTree.ContainsKey(node.UseCount))
-            {
-                insertedNode = _lfuBinaryTree[node.UseCount].AddLast(node);
-            }
-            else
-            {
-                _lfuBinaryTree.Add(node.UseCount, new LinkedList<CacheNode>());
-                insertedNode = _lfuBinaryTree[node.UseCount].AddLast(node);
-            }
-
-            return insertedNode;
+            return InsertCacheNodeInLfuBinaryTree(node, node.UseCount);
         }
 
         public TValue Get(TKey key)
@@ -94,19 +92,19 @@ namespace LfuCache
 
         public bool TryGet(TKey key, out TValue val)
         {
-            LinkedListNode<CacheNode> linkedListNode;
+            LinkedListNode<CacheNode> linkedListCacheNode;
             bool success = false;
 
-            if (_cache.TryGetValue(key, out linkedListNode))
+            if (_cache.TryGetValue(key, out linkedListCacheNode))
             {
-                var cacheNode = linkedListNode.Value;
+                var cacheNode = linkedListCacheNode.Value;
                 val = cacheNode.Data;
 
-                RemoveLinkedListNodeFromLfuBinaryTree(linkedListNode);
+                RemoveLinkedListNodeFromLfuBinaryTree(linkedListCacheNode);
 
                 var newIndex = ++cacheNode.UseCount;
 
-                var newNode = UpdateCacheNodeInLfuBinaryTree(newIndex, cacheNode);
+                var newNode = InsertCacheNodeInLfuBinaryTree(cacheNode, newIndex);
 
                 _cache[key] = newNode;
 
@@ -132,21 +130,19 @@ namespace LfuCache
             }
         }
 
-        private LinkedListNode<CacheNode> UpdateCacheNodeInLfuBinaryTree(int newIndex, CacheNode cacheNode)
+        private LinkedListNode<CacheNode> InsertCacheNodeInLfuBinaryTree(CacheNode node, int index)
         {
-            LinkedListNode<CacheNode> newNode;
+            LinkedList<CacheNode> cacheNodes;
 
-            if (_lfuBinaryTree.ContainsKey(newIndex))
+            if (!_lfuBinaryTree.TryGetValue(index, out cacheNodes))
             {
-                newNode = _lfuBinaryTree[newIndex].AddLast(cacheNode);
-            }
-            else
-            {
-                _lfuBinaryTree.Add(newIndex, new LinkedList<CacheNode>());
-                newNode = _lfuBinaryTree[newIndex].AddLast(cacheNode);
+                cacheNodes = new LinkedList<CacheNode>();
+                _lfuBinaryTree.Add(index, cacheNodes);
             }
 
-            return newNode;
+            var insertedNode = cacheNodes.AddLast(node);
+
+            return insertedNode;
         }
     }
 }

@@ -90,6 +90,7 @@ namespace LfuCache.UnitTest
             Assert.AreEqual("four", four);
         }
 
+#if DEBUG
         [TestMethod]
         public void AddRetrieveToLfuCacheWithEvictsTestingUsingEvents()
         {
@@ -113,9 +114,7 @@ namespace LfuCache.UnitTest
             _lfuCache.Get("3");
             _lfuCache.Get("3");
             _lfuCache.Add("4", "four");
-
-
-
         }
+#endif
     }
 }
