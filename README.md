@@ -1,6 +1,6 @@
 # Least Frequently Used Cache
 
-A Least Frequently Cache algorithm implementation which has logarithmic complexity, it's using a binary tree where nodes are linked list of cached elements with the same use count, this binary tree sorts this linked lists by use count.
+A Least Frequently Used Cache algorithm implementation which has logarithmic complexity, it's using a binary tree where nodes are linked list of cached elements with the same use count, this binary tree sorts this linked lists by use count.
 
 <b>Performance benchmark</b><br>
 
