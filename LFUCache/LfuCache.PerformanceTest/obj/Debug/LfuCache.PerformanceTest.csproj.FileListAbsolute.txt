@@ -1,0 +1,15 @@
+C:\Users\corneladavidoaiei\documents\visual studio 2013\Projects\LFUCache\LfuCache.PerformanceTest\bin\Debug\LfuCache.PerformanceTest.pdb
+C:\Users\corneladavidoaiei\documents\visual studio 2013\Projects\LFUCache\LfuCache.PerformanceTest\bin\Debug\BenchmarkDotNet.Diagnostics.Windows.dll
+C:\Users\corneladavidoaiei\documents\visual studio 2013\Projects\LFUCache\LfuCache.PerformanceTest\bin\Debug\BenchmarkDotNet.dll
+C:\Users\corneladavidoaiei\documents\visual studio 2013\Projects\LFUCache\LfuCache.PerformanceTest\bin\Debug\LFUCache.dll
+C:\Users\corneladavidoaiei\documents\visual studio 2013\Projects\LFUCache\LfuCache.PerformanceTest\bin\Debug\System.Collections.Immutable.dll
+C:\Users\corneladavidoaiei\documents\visual studio 2013\Projects\LFUCache\LfuCache.PerformanceTest\bin\Debug\LFUCache.pdb
+C:\Users\corneladavidoaiei\documents\visual studio 2013\Projects\LFUCache\LfuCache.PerformanceTest\bin\Debug\BenchmarkDotNet.xml
+C:\Users\corneladavidoaiei\documents\visual studio 2013\Projects\LFUCache\LfuCache.PerformanceTest\bin\Debug\BenchmarkDotNet.Diagnostics.Windows.xml
+C:\Users\corneladavidoaiei\documents\visual studio 2013\Projects\LFUCache\LfuCache.PerformanceTest\bin\Debug\System.Collections.Immutable.xml
+C:\Users\corneladavidoaiei\documents\visual studio 2013\Projects\LFUCache\LfuCache.PerformanceTest\obj\Debug\LfuCache.PerformanceTest.csprojResolveAssemblyReference.cache
+C:\Users\corneladavidoaiei\documents\visual studio 2013\Projects\LFUCache\LfuCache.PerformanceTest\obj\Debug\LfuCache.PerformanceTest.pdb
+C:\Users\corneladavidoaiei\documents\visual studio 2013\Projects\LFUCache\LfuCache.PerformanceTest\bin\Debug\LfuCache.PerformanceTest.exe
+C:\Users\corneladavidoaiei\documents\visual studio 2013\Projects\LFUCache\LfuCache.PerformanceTest\obj\Debug\LfuCache.PerformanceTest.exe
+C:\Users\corneladavidoaiei\documents\visual studio 2013\Projects\LFUCache\LfuCache.PerformanceTest\bin\Debug\Microsoft.Diagnostics.Tracing.TraceEvent.dll
+C:\Users\corneladavidoaiei\documents\visual studio 2013\Projects\LFUCache\LfuCache.PerformanceTest\bin\Debug\Microsoft.Diagnostics.Tracing.TraceEvent.xml
