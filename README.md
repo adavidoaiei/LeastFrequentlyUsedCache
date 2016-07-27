@@ -8,7 +8,7 @@ A Least Frequently Used Cache algorithm implementation which has logarithmic com
 
 <img src="http://res.cloudinary.com/dbvcampra/image/upload/v1469564560/_Untitled_inmaq9.png" />
 
-This cache runs two times faster than MemoryCache from .NET Framework and consumes half of memory which MemoryCache consumes on the same benchmark.
+This cache runs two times faster than MemoryCache from .NET Framework and consumes half of memory consumed by MemoryCache on the same benchmark.
 
 
 
