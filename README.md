@@ -6,9 +6,11 @@ A Least Frequently Used Cache algorithm implementation which has logarithmic com
 
 1000.000 add/get operations on implemented Least Frequently Used Cache of size 90.000 using elements from a list with 100.000 takes 411ms.
 
-<img src="http://res.cloudinary.com/dbvcampra/image/upload/v1469564560/_Untitled_inmaq9.png" />
+<img src="http://res.cloudinary.com/dbvcampra/image/upload/v1469634935/lfu_syqnac.png" />
 
-This cache runs two times faster than MemoryCache from .NET Framework and consumes half of memory consumed by MemoryCache on the same benchmark.
+This cache runs faster than MemoryCache from .NET Framework and consumes less memory than this on the same benchmark.
+
+<img src="http://res.cloudinary.com/dbvcampra/image/upload/v1469634935/mc_ikzrsm.png" />
 
 
 
