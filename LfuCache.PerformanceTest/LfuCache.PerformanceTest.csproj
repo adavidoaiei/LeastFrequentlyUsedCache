@@ -47,6 +47,8 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Benchmarks.cs" />
+    <Compile Include="MemoryCacheBenchmarks.cs" />
+    <Compile Include="MemoryCache.cs" />
     <Compile Include="LfuCacheBenchmarks.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -60,10 +62,12 @@
     <Reference Include="Microsoft.Diagnostics.Tracing.TraceEvent">
       <HintPath>D:\Work\src\Sdl\FileTypeSupport\Filters\packages\Microsoft.Diagnostics.Tracing.TraceEvent.1.0.41\lib\net40\Microsoft.Diagnostics.Tracing.TraceEvent.dll</HintPath>
     </Reference>
+    <Reference Include="System" />
     <Reference Include="System.Collections.Immutable, Version=1.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Collections.Immutable.1.2.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Runtime.Caching" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -10,6 +10,7 @@ namespace LfuCache.PerformanceTest
         private static void Main()
         {
             BenchmarkRunner.Run<LfuCacheBenchmarks>();
+            BenchmarkRunner.Run<MemoryCacheBenchmarks>();
         }
     }
 }
