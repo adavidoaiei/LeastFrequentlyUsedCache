@@ -8,8 +8,5 @@ A Least Frequently Used Cache algorithm implementation which has logarithmic com
 
 <img src="http://res.cloudinary.com/dbvcampra/image/upload/v1469564560/_Untitled_inmaq9.png" />
 
-It could be better, an O(1) algorithm for implementing the LFU cache eviction scheme
-http://dhruvbird.com/lfu.pdf
 
-I hope to come soon with O(1) implementation.
 
