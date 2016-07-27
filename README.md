@@ -4,7 +4,7 @@ A Least Frequently Used Cache algorithm implementation which has logarithmic com
 
 <b>Performance benchmark</b><br>
 
-1000.000 add/get operations on implemented Least Frequently Used Cache of size 90.000 using elements from a list with 100.000 takes 411ms.
+1000.000 add/get operations on implemented Least Frequently Used Cache of size 90.000 using elements from a list with 100.000 takes 466ms.
 
 <img src="http://res.cloudinary.com/dbvcampra/image/upload/v1469634935/lfu_syqnac.png" />
 
