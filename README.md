@@ -1,6 +1,13 @@
 # Least Frequently Used Cache
 
-A Least Frequently Used Cache algorithm implementation which has logarithmic complexity, it's using a binary tree where nodes are linked list of cached elements with the same use count, this binary tree sorts this linked lists by use count.
+<b>Overview</b>
+
+Parsing cache is implemented using a cache with least frequently used policy, the idea behind least frequently cache policy is that for each item from cache it keeps a use count which increments each time when the item is accessed, when cache exceed the limit this evicts(removes) the element with minimum use count freeing memory for a new element.
+
+<b>Implementation</b>
+
+It's needed a data structure to store elements from cache sorted by use count, the current implementation uses a SortedList where key is use count and Value is LinkedList of elements from cache with the same use count, SortedList sorts LinkedLists by use count using a binary tree.
+This data structure allows to run Add/Get operations in O(log n) time.
 
 <b>Performance benchmark</b><br>
 
