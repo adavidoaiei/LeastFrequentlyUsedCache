@@ -2,7 +2,7 @@
 
 <b>Overview</b>
 
-Parsing cache is implemented using a cache with least frequently used policy, the idea behind least frequently cache policy is that for each item from cache it keeps a use count which increments each time when the item is accessed, when cache exceed the limit this evicts(removes) the element with minimum use count freeing memory for a new element.
+The idea behind least frequently cache policy is that for each item from cache it keeps a use count which increments each time when the item is accessed, when cache exceed the limit this evicts(removes) the element with minimum use count freeing memory for a new element.
 
 <b>Implementation</b>
 
