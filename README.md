@@ -12,5 +12,7 @@ This cache runs faster than MemoryCache from .NET Framework and consumes less me
 
 <img src="http://res.cloudinary.com/dbvcampra/image/upload/v1469634935/mc_ikzrsm.png" />
 
+The Add/Get operations sequence is generated random in operations array of size OperationsCount, this operations process elements from a list of size EelementsCount in used cache.
+
 
 
