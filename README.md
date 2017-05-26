@@ -22,5 +22,5 @@ This cache runs faster than MemoryCache from .NET Framework and consumes less me
 The Add/Get operations sequence is generated random in an operations array of size OperationsCount, this operations process elements from a list of size EelementsCount using selected cache.
 
 
-<b>Applications</b><br>
+<b>Applications</b><br><br>
 This has applications in browsers, operating systems, and all over in computer system where you should do memory management because memory in computer science is limited and doesn't exist infinite concept like in mathematics
