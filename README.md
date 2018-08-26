@@ -29,7 +29,7 @@ This has applications in browsers, operating systems, and all over in computer s
 ```
 The MIT License (MIT)
 
-Copyright (c) Microsoft Corporation
+Copyright (c) Adavidoaiei Dumitru-Cornel
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
