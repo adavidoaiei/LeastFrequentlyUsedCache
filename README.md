@@ -24,7 +24,7 @@ The Add/Get operations sequence is generated random in an operations array of si
 
 <b>Applications</b><br><br>
 This has applications in browsers, operating systems, and all over in computer system where you should do memory management because memory in computer science is limited and doesn't exist infinite concept like in mathematics.
-I used this component in my real life projects.
+I used this Least Frequently Used Cache in my real life projects.
 
 ## License
 ```
