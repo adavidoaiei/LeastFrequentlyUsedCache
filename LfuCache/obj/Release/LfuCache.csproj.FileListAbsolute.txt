@@ -9,3 +9,9 @@ C:\Users\adavidoaiei\Downloads\LeastFrequentlyUsedCache\LFUCache\obj\Release\Lfu
 C:\Users\adavidoaiei\Downloads\LeastFrequentlyUsedCache\LFUCache\obj\Release\LfuCache.csproj.CoreCompileInputs.cache
 C:\Users\adavidoaiei\Downloads\LeastFrequentlyUsedCache\LFUCache\obj\Release\LFUCache.dll
 C:\Users\adavidoaiei\Downloads\LeastFrequentlyUsedCache\LFUCache\obj\Release\LFUCache.pdb
+C:\Users\adavidoaiei\Desktop\LeastFrequentlyUsedCache\LFUCache\bin\Release\LFUCache.dll
+C:\Users\adavidoaiei\Desktop\LeastFrequentlyUsedCache\LFUCache\bin\Release\LFUCache.pdb
+C:\Users\adavidoaiei\Desktop\LeastFrequentlyUsedCache\LFUCache\obj\Release\LfuCache.csprojAssemblyReference.cache
+C:\Users\adavidoaiei\Desktop\LeastFrequentlyUsedCache\LFUCache\obj\Release\LfuCache.csproj.CoreCompileInputs.cache
+C:\Users\adavidoaiei\Desktop\LeastFrequentlyUsedCache\LFUCache\obj\Release\LFUCache.dll
+C:\Users\adavidoaiei\Desktop\LeastFrequentlyUsedCache\LFUCache\obj\Release\LFUCache.pdb

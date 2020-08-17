@@ -27,3 +27,17 @@ C:\Users\adavidoaiei\Downloads\LeastFrequentlyUsedCache\LfuCache.PerformanceTest
 C:\Users\adavidoaiei\Downloads\LeastFrequentlyUsedCache\LfuCache.PerformanceTest\obj\Release\LfuCache.PerformanceTest.csproj.CopyComplete
 C:\Users\adavidoaiei\Downloads\LeastFrequentlyUsedCache\LfuCache.PerformanceTest\obj\Release\LfuCache.PerformanceTest.exe
 C:\Users\adavidoaiei\Downloads\LeastFrequentlyUsedCache\LfuCache.PerformanceTest\obj\Release\LfuCache.PerformanceTest.pdb
+C:\Users\adavidoaiei\Desktop\LeastFrequentlyUsedCache\LfuCache.PerformanceTest\bin\Release\LfuCache.PerformanceTest.exe
+C:\Users\adavidoaiei\Desktop\LeastFrequentlyUsedCache\LfuCache.PerformanceTest\bin\Release\LfuCache.PerformanceTest.pdb
+C:\Users\adavidoaiei\Desktop\LeastFrequentlyUsedCache\LfuCache.PerformanceTest\bin\Release\LFUCache.dll
+C:\Users\adavidoaiei\Desktop\LeastFrequentlyUsedCache\LfuCache.PerformanceTest\bin\Release\System.Collections.Immutable.dll
+C:\Users\adavidoaiei\Desktop\LeastFrequentlyUsedCache\LfuCache.PerformanceTest\bin\Release\LFUCache.pdb
+C:\Users\adavidoaiei\Desktop\LeastFrequentlyUsedCache\LfuCache.PerformanceTest\bin\Release\BenchmarkDotNet.xml
+C:\Users\adavidoaiei\Desktop\LeastFrequentlyUsedCache\LfuCache.PerformanceTest\bin\Release\BenchmarkDotNet.Diagnostics.Windows.xml
+C:\Users\adavidoaiei\Desktop\LeastFrequentlyUsedCache\LfuCache.PerformanceTest\bin\Release\Microsoft.Diagnostics.Tracing.TraceEvent.xml
+C:\Users\adavidoaiei\Desktop\LeastFrequentlyUsedCache\LfuCache.PerformanceTest\bin\Release\System.Collections.Immutable.xml
+C:\Users\adavidoaiei\Desktop\LeastFrequentlyUsedCache\LfuCache.PerformanceTest\obj\Release\LfuCache.PerformanceTest.csprojAssemblyReference.cache
+C:\Users\adavidoaiei\Desktop\LeastFrequentlyUsedCache\LfuCache.PerformanceTest\obj\Release\LfuCache.PerformanceTest.csproj.CoreCompileInputs.cache
+C:\Users\adavidoaiei\Desktop\LeastFrequentlyUsedCache\LfuCache.PerformanceTest\obj\Release\LfuCache.PerformanceTest.csproj.CopyComplete
+C:\Users\adavidoaiei\Desktop\LeastFrequentlyUsedCache\LfuCache.PerformanceTest\obj\Release\LfuCache.PerformanceTest.exe
+C:\Users\adavidoaiei\Desktop\LeastFrequentlyUsedCache\LfuCache.PerformanceTest\obj\Release\LfuCache.PerformanceTest.pdb

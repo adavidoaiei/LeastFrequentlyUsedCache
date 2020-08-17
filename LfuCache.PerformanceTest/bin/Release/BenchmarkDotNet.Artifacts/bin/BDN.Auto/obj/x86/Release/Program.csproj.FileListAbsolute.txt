@@ -1,0 +1,16 @@
+C:\Users\adavidoaiei\Desktop\LeastFrequentlyUsedCache\LfuCache.PerformanceTest\bin\Release\BenchmarkDotNet.Artifacts\bin\BDN.Auto\obj\x86\Release\Program.csprojResolveAssemblyReference.cache
+C:\Users\adavidoaiei\Desktop\LeastFrequentlyUsedCache\LfuCache.PerformanceTest\bin\Release\BenchmarkDotNet.Artifacts\bin\BDN.Auto\Program.exe.config
+C:\Users\adavidoaiei\Desktop\LeastFrequentlyUsedCache\LfuCache.PerformanceTest\bin\Release\BenchmarkDotNet.Artifacts\bin\BDN.Auto\obj\x86\Release\Program.exe
+C:\Users\adavidoaiei\Desktop\LeastFrequentlyUsedCache\LfuCache.PerformanceTest\bin\Release\BenchmarkDotNet.Artifacts\bin\BDN.Auto\obj\x86\Release\Program.pdb
+C:\Users\adavidoaiei\Desktop\LeastFrequentlyUsedCache\LfuCache.PerformanceTest\bin\Release\BenchmarkDotNet.Artifacts\bin\BDN.Auto\Program.exe
+C:\Users\adavidoaiei\Desktop\LeastFrequentlyUsedCache\LfuCache.PerformanceTest\bin\Release\BenchmarkDotNet.Artifacts\bin\BDN.Auto\Program.pdb
+C:\Users\adavidoaiei\Desktop\LeastFrequentlyUsedCache\LfuCache.PerformanceTest\bin\Release\BenchmarkDotNet.Artifacts\bin\BDN.Auto\BenchmarkDotNet.Diagnostics.Windows.dll
+C:\Users\adavidoaiei\Desktop\LeastFrequentlyUsedCache\LfuCache.PerformanceTest\bin\Release\BenchmarkDotNet.Artifacts\bin\BDN.Auto\BenchmarkDotNet.dll
+C:\Users\adavidoaiei\Desktop\LeastFrequentlyUsedCache\LfuCache.PerformanceTest\bin\Release\BenchmarkDotNet.Artifacts\bin\BDN.Auto\LFUCache.dll
+C:\Users\adavidoaiei\Desktop\LeastFrequentlyUsedCache\LfuCache.PerformanceTest\bin\Release\BenchmarkDotNet.Artifacts\bin\BDN.Auto\LfuCache.PerformanceTest.exe
+C:\Users\adavidoaiei\Desktop\LeastFrequentlyUsedCache\LfuCache.PerformanceTest\bin\Release\BenchmarkDotNet.Artifacts\bin\BDN.Auto\Microsoft.Diagnostics.Tracing.TraceEvent.dll
+C:\Users\adavidoaiei\Desktop\LeastFrequentlyUsedCache\LfuCache.PerformanceTest\bin\Release\BenchmarkDotNet.Artifacts\bin\BDN.Auto\BenchmarkDotNet.xml
+C:\Users\adavidoaiei\Desktop\LeastFrequentlyUsedCache\LfuCache.PerformanceTest\bin\Release\BenchmarkDotNet.Artifacts\bin\BDN.Auto\LFUCache.pdb
+C:\Users\adavidoaiei\Desktop\LeastFrequentlyUsedCache\LfuCache.PerformanceTest\bin\Release\BenchmarkDotNet.Artifacts\bin\BDN.Auto\BenchmarkDotNet.Diagnostics.Windows.xml
+C:\Users\adavidoaiei\Desktop\LeastFrequentlyUsedCache\LfuCache.PerformanceTest\bin\Release\BenchmarkDotNet.Artifacts\bin\BDN.Auto\LfuCache.PerformanceTest.pdb
+C:\Users\adavidoaiei\Desktop\LeastFrequentlyUsedCache\LfuCache.PerformanceTest\bin\Release\BenchmarkDotNet.Artifacts\bin\BDN.Auto\Microsoft.Diagnostics.Tracing.TraceEvent.xml
