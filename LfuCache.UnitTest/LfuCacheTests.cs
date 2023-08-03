@@ -1,19 +1,19 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using NUnit.Framework;
 
 namespace LfuCache.UnitTest
 {
-    [TestClass]
+    [TestFixture]
     public class LfuCacheTests
     {
         private LfuCache<string, string> _lfuCache;
 
-        [TestInitialize]
+        [SetUp]
         public void BeforeEach()
         {
             _lfuCache = new LfuCache<string, string>(3);
         }
 
-        [TestMethod]
+        [Test]
         public void AddRetrieveToLfuCache()
         {
             // Arrange
@@ -32,7 +32,7 @@ namespace LfuCache.UnitTest
             Assert.AreEqual("three", three);
         }
 
-        [TestMethod]
+        [Test]
         public void AddRetrieveToLfuCacheSizeOne()
         {
             _lfuCache = new LfuCache<string, string>(1);
@@ -57,7 +57,7 @@ namespace LfuCache.UnitTest
             Assert.AreEqual("two", two);
         }
 
-        [TestMethod]
+        [Test]
         public void AddRetrieveToLfuCacheWithEvicts()
         {
             // Arrange
@@ -91,7 +91,7 @@ namespace LfuCache.UnitTest
         }
 
 #if DEBUG
-        [TestMethod]
+        [Test]
         public void AddRetrieveToLfuCacheWithEvictsTestingUsingEvents()
         {
             _lfuCache.EvictEvent += delegate(string value)

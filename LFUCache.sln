@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LfuCache", "LFUCache\LfuCache.csproj", "{D38F11CF-A28D-4DB8-A436-034DB8087A0B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LFUCache", "LFUCache\LFUCache.csproj", "{2E677A4A-59D9-46DB-A529-3101DEECE746}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LfuCache.UnitTest", "LfuCache.UnitTest\LfuCache.UnitTest.csproj", "{99FC3F20-DC8D-42DC-A205-8D179468E15F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LfuCache.UnitTest", "LfuCache.UnitTest\LfuCache.UnitTest.csproj", "{62A8EB56-5814-4BA3-AA03-FD887E40FD3A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LfuCache.PerformanceTest", "LfuCache.PerformanceTest\LfuCache.PerformanceTest.csproj", "{74F04985-39A2-4A71-BBC7-C2C44E991B06}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LfuCache.PerformanceTest", "LfuCache.PerformanceTest\LfuCache.PerformanceTest.csproj", "{7DBA5DCE-C889-4D2F-9CE1-DD97528EB438}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,18 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D38F11CF-A28D-4DB8-A436-034DB8087A0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D38F11CF-A28D-4DB8-A436-034DB8087A0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D38F11CF-A28D-4DB8-A436-034DB8087A0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D38F11CF-A28D-4DB8-A436-034DB8087A0B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{99FC3F20-DC8D-42DC-A205-8D179468E15F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{99FC3F20-DC8D-42DC-A205-8D179468E15F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{99FC3F20-DC8D-42DC-A205-8D179468E15F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{99FC3F20-DC8D-42DC-A205-8D179468E15F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{74F04985-39A2-4A71-BBC7-C2C44E991B06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{74F04985-39A2-4A71-BBC7-C2C44E991B06}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{74F04985-39A2-4A71-BBC7-C2C44E991B06}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{74F04985-39A2-4A71-BBC7-C2C44E991B06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E677A4A-59D9-46DB-A529-3101DEECE746}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E677A4A-59D9-46DB-A529-3101DEECE746}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E677A4A-59D9-46DB-A529-3101DEECE746}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E677A4A-59D9-46DB-A529-3101DEECE746}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62A8EB56-5814-4BA3-AA03-FD887E40FD3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62A8EB56-5814-4BA3-AA03-FD887E40FD3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62A8EB56-5814-4BA3-AA03-FD887E40FD3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62A8EB56-5814-4BA3-AA03-FD887E40FD3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DBA5DCE-C889-4D2F-9CE1-DD97528EB438}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DBA5DCE-C889-4D2F-9CE1-DD97528EB438}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DBA5DCE-C889-4D2F-9CE1-DD97528EB438}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DBA5DCE-C889-4D2F-9CE1-DD97528EB438}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

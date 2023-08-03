@@ -1,13 +1,13 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections;
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Configs;
-using BenchmarkDotNet.Diagnostics.Windows;
+using BenchmarkDotNet.Diagnosers;
+using BenchmarkDotNet.Exporters;
 
 namespace LfuCache.PerformanceTest
 {
-    [Config(typeof(MemoryConfig))]
+    [MemoryDiagnoser]
+    [Config(typeof(ExporterMemoryCacheBenchmarksConfig))]
     public class MemoryCacheBenchmarks
     {
         [Params(100000)]
@@ -33,14 +33,14 @@ namespace LfuCache.PerformanceTest
             public string Value { get; set; }
         }
 
-        private ICache<string, string> _lfuCache;
+        private ICache<string, string> _memoryCache;
 
         private IList<ListElement> _processingElements;
 
-        [Setup]
+        [GlobalSetup]
         public void BeforeEach()
         {
-            _lfuCache = new MemoryCache<string>();
+            _memoryCache = new MemoryCache<string>();
             _processingElements = new List<ListElement>();
             _operations = new BitArray(OperationsCount);
 
@@ -62,7 +62,7 @@ namespace LfuCache.PerformanceTest
         }
 
         [Benchmark]
-        public void BenchmarkLfuCachePerformance()
+        public void BenchmarkMemoryCachePerformance()
         {
             int index = 0;
             for (int i = 0; i < OperationsCount; i++)
@@ -72,23 +72,24 @@ namespace LfuCache.PerformanceTest
 
                 if (_operations[i] == OperationType.Read)
                 {
-                    _lfuCache.Get(_processingElements[index].Key);
+                    _memoryCache.Get(_processingElements[index].Key);
                 }
                 else if (_operations[i] == OperationType.Write)
                 {
-                    _lfuCache.Add(_processingElements[index].Key, _processingElements[index].Value);
+                    _memoryCache.Add(_processingElements[index].Key, _processingElements[index].Value);
                 }
 
                 index++;
             }
         }
 
-        private class MemoryConfig : ManualConfig
+    }
+
+    public class ExporterMemoryCacheBenchmarksConfig : ManualConfig
+    {
+        public ExporterMemoryCacheBenchmarksConfig()
         {
-            public MemoryConfig()
-            {
-                Add(new MemoryDiagnoser());
-            }
+           Add(HtmlExporter.Default);
         }
     }
 }

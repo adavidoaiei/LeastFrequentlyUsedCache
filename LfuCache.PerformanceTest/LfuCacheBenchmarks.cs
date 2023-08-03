@@ -1,13 +1,12 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections;
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Configs;
-using BenchmarkDotNet.Diagnostics.Windows;
+using BenchmarkDotNet.Exporters;
 
 namespace LfuCache.PerformanceTest
 {
-    [Config(typeof(MemoryConfig))]
+    [MemoryDiagnoser]
+    [Config(typeof(ExporterLfuCacheBenchmarksConfig))]
     public class LfuCacheBenchmarks
     {
         [Params(100000)]
@@ -37,7 +36,7 @@ namespace LfuCache.PerformanceTest
 
         private IList<ListElement> _processingElements;
 
-        [Setup]
+        [GlobalSetup]
         public void BeforeEach()
         {
             _lfuCache = new LfuCache<string, string>(CacheSize);
@@ -82,13 +81,13 @@ namespace LfuCache.PerformanceTest
                 index++;
             }
         }
+    }
 
-        private class MemoryConfig : ManualConfig
+    public class ExporterLfuCacheBenchmarksConfig : ManualConfig
+    {
+        public ExporterLfuCacheBenchmarksConfig()
         {
-            public MemoryConfig()
-            {
-                Add(new MemoryDiagnoser());
-            }
+            Add(HtmlExporter.Default);
         }
     }
 }

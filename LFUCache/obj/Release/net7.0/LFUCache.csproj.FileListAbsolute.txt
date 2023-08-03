@@ -1,0 +1,12 @@
+/home/adavidoaiei/Downloads/LeastFrequentlyUsedCache/LFUCache/bin/Release/net7.0/LFUCache.deps.json
+/home/adavidoaiei/Downloads/LeastFrequentlyUsedCache/LFUCache/bin/Release/net7.0/LFUCache.dll
+/home/adavidoaiei/Downloads/LeastFrequentlyUsedCache/LFUCache/bin/Release/net7.0/LFUCache.pdb
+/home/adavidoaiei/Downloads/LeastFrequentlyUsedCache/LFUCache/obj/Release/net7.0/LFUCache.csproj.AssemblyReference.cache
+/home/adavidoaiei/Downloads/LeastFrequentlyUsedCache/LFUCache/obj/Release/net7.0/LFUCache.GeneratedMSBuildEditorConfig.editorconfig
+/home/adavidoaiei/Downloads/LeastFrequentlyUsedCache/LFUCache/obj/Release/net7.0/LFUCache.AssemblyInfoInputs.cache
+/home/adavidoaiei/Downloads/LeastFrequentlyUsedCache/LFUCache/obj/Release/net7.0/LFUCache.AssemblyInfo.cs
+/home/adavidoaiei/Downloads/LeastFrequentlyUsedCache/LFUCache/obj/Release/net7.0/LFUCache.csproj.CoreCompileInputs.cache
+/home/adavidoaiei/Downloads/LeastFrequentlyUsedCache/LFUCache/obj/Release/net7.0/LFUCache.dll
+/home/adavidoaiei/Downloads/LeastFrequentlyUsedCache/LFUCache/obj/Release/net7.0/refint/LFUCache.dll
+/home/adavidoaiei/Downloads/LeastFrequentlyUsedCache/LFUCache/obj/Release/net7.0/LFUCache.pdb
+/home/adavidoaiei/Downloads/LeastFrequentlyUsedCache/LFUCache/obj/Release/net7.0/ref/LFUCache.dll
